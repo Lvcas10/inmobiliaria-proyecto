@@ -1,0 +1,500 @@
+:root {
+    font-size: 1rem;
+}
+
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+@font-face {
+    font-family: "Next Sunday";
+    src: url(../font/Next\ Sunday.otf);
+    src: url(../font/Next\ Sunday.ttf);
+}
+
+@font-face {
+    font-family: "LastEpisode";
+    src: url(../font/LastEpisode.otf);
+}
+
+body { 
+    background-color: #c7d3dd;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 { 
+    font-family: "Next Sunday";
+}
+
+h2 {
+    font-family: "LastEpisode";
+    font-size: 1.9rem;
+}
+
+h3 {
+    font-family: "LastEpisode";
+}
+
+.container-portada h5 {
+    font-family: "LastEpisode";
+    font-size: 1rem;
+}
+
+/* inicio footer */
+footer {
+    background-color: #48435C;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3)1fr;
+}
+
+.redes  {
+    position: absolut;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    height: 470px;
+    right: 50%;
+    padding: 1px 0 0 5px;
+    color: white;
+}
+
+.ubicacion iframe {
+    height: 330px;
+    width: 300px;
+    box-shadow: 1px 1px 5px;
+}
+
+.somos {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    left: 30%;
+    height: 300px;
+    width: 30%;
+}
+
+.somos-container {
+    font-size: 17px;
+    color: white;
+}
+
+.footer-titles h4 {
+    font-family: "LastEpisode";
+    font-size: 1.5rem;
+    color: white;
+    padding: 10px;
+}
+
+.ubicacion  {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+    left: 70%;
+    width: 25%;
+    height: 400px;
+    
+}
+/* fin footer */
+div.logo-container span { /* mondino propiedades */
+    font-family: "Next Sunday";
+}
+
+img.icons { /*iconos footer*/
+    width: 30px;
+}
+
+nav.navegacion { /*barra de navegacion*/
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #48435C;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navegacion .logo-container {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    width: 30%;
+}
+
+.logo-container .logo { /*logo dimensiones*/
+    width: 90px;
+}
+
+.logo-container span { /* logo y titulo */
+    font-size: 1.6rem;
+    font-weight: 100;
+    color: white;
+}
+
+.navegacion-nav { /*contenedor de navegacion*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    width: 40%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navegacion-nav .nav-item { /* botones de navegacion */
+    padding: 10px;
+}
+
+.nav-item a{
+    color: white;
+    font-family: "LastEpisode";
+}
+
+a .top { /*flecha hacia arriba*/
+    width: 30px;
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+}
+
+
+.header-container {
+    position: relative; /* contenedor de video */
+    top: 0;
+    width: 100%;
+    height: 80vh;
+}
+
+.header-container video { /* video portada */
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-container .capa {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.596); /* opacidad */
+    mix-blend-mode: overlay; /* revividor de colores */
+}
+
+.container-portada { /* portada */
+    position: absolute;
+    background-color: rgba(7, 7, 7, 0.123);
+    top: 18%;
+    left: 5%;
+    padding: 20px; /* relleno interior */
+    width: 600px;
+    height: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.venta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2% 0 0 6%;
+    width: 100%;
+}
+
+.venta h2 {
+    height: 70px;
+    text-align: center;
+}
+
+.venta h2 span {
+    color: #48435C;
+}
+
+
+.venta-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 4%
+}
+
+.alquiler {
+    padding: 1.5rem 0 2% 6%;
+    width: 100%;
+}
+
+.alquiler h2 {
+    height: 70px;
+    text-align: center;
+}
+
+.alquiler h2 span {
+    color: #48435C;
+}
+
+.alquiler h2 {
+    color: rgb(5, 5, 5);
+}
+
+.alquiler-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 4%
+}
+
+/* cartas de venta */
+.cards {
+    height: 400px;
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 5%;
+    box-shadow: 1px 1px 5px;  /* difuminado bordes */
+}
+/* dimension de las cartas */
+.cards img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cards-title h3 {
+    font-size: 1.5rem;
+}
+
+.cards .card-container {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+/* pagina html ventas */
+/* inicio */
+.cabecera img { /* modifica en alquileres */
+    position: relative; 
+    width: 100%;
+    height: 80vh;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cabecera h1 { /* modifica en alquileres */
+    position: absolute;
+    top: 300px;
+} 
+
+.ventasht {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2,1fr) 2fr;
+        width: 100%;
+        padding: 20px;
+        background-color: #ffffff;
+}
+
+.form-ventasht {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #c7d3dd;
+    width: 400px;
+    height: 100%;
+    padding: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-ventasht h2 span {
+    color: #48435C;
+}
+
+.form-casilla { /* modifica alquiler */
+    padding: 8px;
+}
+
+.sales-cards {
+    position: relative;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    overflow-y: scroll;
+    overflow-y: hidden;
+    width: 900px;
+    height: 500px;
+    left: 15px;
+    gap: 3rem;
+    padding-bottom: 10px;
+}
+
+.card {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: #c7d3dd;
+}
+
+/* fin html ventas */
+
+/* Incio html alquiler */
+
+.alquilerht {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr) 2fr;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+
+.form-alquilerht {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #c7d3dd;
+    width: 400px;
+    height: 100%;
+    padding: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-alquilerht h2 span {
+    color: #48435C;
+}
+
+.alquiler-cards {
+    position: relative;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    overflow-y: scroll;
+    overflow-y: hidden;
+    width: 900px;
+    height: 500px;
+    left: 15px;
+    gap: 3rem;
+    padding-bottom: 10px;
+}
+
+/* Fin html alquiler */
+
+/* Iinicio html tasaciones */
+.container-tas {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    padding: 10px;
+    background-color: #c7d3dd;
+}
+
+.container-sec {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+.container-tas h2 {
+    position: relative;
+    align-items: center;
+    font-size: 2.3rem;
+    width: 50%;
+    left: 40%;
+    color: #050505;
+}
+
+.container-tas h3 {
+    position: relative;
+    font-family: "Next Sunday";
+    font-size: 2rem;
+    width: 70%;
+    left: 17%;
+    top: -90px;
+    color: #48435C;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.753);
+}
+
+.container-tas h4 {
+    font-family: "Next Sunday";
+    font-size: 1.5rem;
+    width: 60%;
+    left: 17%;
+    top: -90px;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.753);
+}
+
+.container-sec img {
+    position: relative;
+    left: 4.7%;
+    width: 600px;
+    height: 400px;
+}
+
+.header-tas {
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+.form-tas {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.form-containertas {
+    padding: 30px;
+}
+
+.form-containertas form {
+    padding: 15px;
+}
+
+form h5 {
+    position: relative;
+    top: -25px;
+    font-size: 2rem;
+    color: #000000;
+}
+
+form h5 span {
+    color: #000000;
+}
+
+.inftas {
+    position: relative;
+    width: 100%;
+    height: 175px;
+}
+
+
+
