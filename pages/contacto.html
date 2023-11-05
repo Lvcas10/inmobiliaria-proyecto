@@ -32,30 +32,47 @@
             </li>
         </ul>
     </nav>    
-    <H1>Contacto</H1>
-        <section> <!--formulario de contacto-->
-            <form action="post">
-                <div>
-                    <label for="nombre">Nombre</label>
-                        <input type="text" id="nombre" placeholder="Ingrese su nombre completo">
+    <header class="cabecera-contact">
+        <div class="pics">
+            <img src="../assets/img/ventasht2.jpeg" alt="">
+            <img src="../assets/img/ventasht2.jpeg" alt="">
+            <img src="../assets/img/ventasht2.jpeg" alt="">
+            <img src="../assets/img/ventasht2.jpeg" alt="">
+            <img src="../assets/img/ventasht2.jpeg" alt="">
+            <img src="../assets/img/ventasht2.jpeg" alt="">
+        </div>
+        <div class="contact-title">
+            <H1 class="text-center">¿Quieres contactarte con nosotros?</H1>
+        </div>
+    </header>
+    <main class="form-contact"> 
+        <section class="contact">
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Juan Agustin" aria-label="Nombre Completo">
                 </div>
-                <div>
-                    <label for="telefono">Telefono</label>
-                        <input type="number" id="telefono" placeholder="Ingrese su telefono">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Fernandez" aria-label="Apellido">
                 </div>
-                <div>
-                    <label for="email">E-mail</label>
-                        <input type="text" id="email" placeholder="Ingrese su correo">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="email" class="form-control" placeholder="nombre@ejemplo.com.ar" aria-label="email">
                 </div>
-                <div>
-                    <label for="asunto">Asunto</label>
-                        <input type="text" id="asunto" placeholder="Asunto">
+                <div class="col">
+                    <input type="number" class="form-control" placeholder="0-11-15-XXXXXX" aria-label="Telefono">
                 </div>
-                <!-- botones -->
-                <input type="submit" value="Enviar"> 
-                <input type="reset" value="Cancelar">
-            </form>
+            </div>
+            <div class="mb-3">
+                <label for="asuntos" class="form-label"></label>
+                <input type="text" class="form-control text-center" id="asuntos" placeholder="Asuntos">
+            </div>
+            <div class="mb-3">
+                <label for="cajatexto" class="form-label"></label>
+                <textarea class="form-control" id="cajatexto" rows="3" placeholder="Describe tu mensaje"></textarea>
+            </div>
         </section>
+    </main>
         <div class="flecha">
             <a href="#top"><img src="../assets/img/flecha.png" alt="dirigete hacia arriba" class="top"></a>
         </div>

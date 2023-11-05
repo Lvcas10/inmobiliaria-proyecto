@@ -435,7 +435,7 @@ a .top { /*flecha hacia arriba*/
     font-family: "Next Sunday";
     font-size: 2rem;
     width: 70%;
-    left: 17%;
+    left: 16%;
     top: -90px;
     color: #48435C;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.753);
@@ -496,5 +496,73 @@ form h5 span {
     height: 175px;
 }
 
+/* fin html tasaciones */
 
+/* inicio html contacto */
 
+.cabecera-contact .pics {
+    position: relative; 
+    width: 100%;
+    height: 80vh;
+}
+
+.pics {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.pics img {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.pics img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #c7d3dd;
+    width: 60%;
+    left: 20%;
+    padding: 30px;
+    gap: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px  rgba(0, 0, 0, 0.5);
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+}
+
+.contact-title {
+    padding: 15px;
+}
+
+.contact-title h1 {
+    position: relative;
+    display: inline;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    left: 24%;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* fin html contacto */

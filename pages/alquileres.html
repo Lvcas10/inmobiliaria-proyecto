@@ -71,14 +71,19 @@
                     <label for="lugar" class="form-label">Lugar</label>
                     <input type="text" class="form-control" id="lugar" placeholder="Localidad, Provincia">
                 </div>
-                <div class="mb-3">
-                    <label for="Precio Minimo" class="form-label">Precio Minimo</label>
-                    <input type="number" class="form-control" id="Precio Minimo" placeholder="Precio Minimo">
-                </div>
-                <div class="mb-3">
-                    <label for="Precio Maximo" class="form-label">Precio Maximo</label>
-                    <input type="number" class="form-control" id="Precio Maximo" placeholder="Precio Maximo">
-                </div>
+                <fieldset disabled>
+                    <div class="mb-3">
+                        <label for="Precio Minimo" class="form-label">Precio Minimo</label>
+                        <input type="number" class="form-control" id="Precio Minimo" placeholder="Precio Minimo">
+                    </div>
+                </fieldset>
+                <fieldset disabled>
+                    <div class="mb-3">
+                        <label for="Precio Maximo" class="form-label">Precio Maximo</label>
+                        <input type="text" id="Precio Maximo" class="form-control" placeholder="Precio Maximo">
+                    </div>
+                </fieldset>
+                <button type="submit" class="btn btn-outline-dark">Buscar</button>
             </form>
         </section>
         <article class="alquiler-cards">
