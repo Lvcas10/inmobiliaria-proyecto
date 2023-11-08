@@ -8,29 +8,32 @@
     <link rel="stylesheet" href="./css/style.css"> <!-- vinculo css -->
     <title>Mondino Propiedades</title>
 </head>
-<body id="pag">
+<body>
     <nav class="navegacion"> <!--barra de navegacion-->
         <div class="logo-container">
             <a href="index.html"><img src="./assets/img/logo.png" alt="logo mondino" class="logo"></a>
                 <span class="titulo">Mondino Propiedades</span>
         </div>
+        <!-- menu mobile -->
+        <input type="checkbox" id="check_menu">
         <ul class="navegacion-nav"> <!-- botones de navegacion -->
             <li class="nav-item">
-                <a href="./index.html"><i class='bx bxs-home-smile'></i>Inicio</a>
+                <a class="nav-link active" href="./index.html"><i class='bx bxs-home-smile'></i>Inicio</a>
             </li>
             <li class="nav-item">
-                <a href="./pages/ventas.html"><i class='bx bxs-store'></i>Ventas</a>
+                <a class="nav-link" href="./pages/ventas.html"><i class='bx bxs-store'></i>Ventas</a>
             </li>
             <li class="nav-item">
-                <a href="./pages/alquileres.html"><i class='bx bxs-business'></i>Alquileres</a>
+                <a class="nav-link" href="./pages/alquileres.html"><i class='bx bxs-business'></i>Alquileres</a>
             </li>
             <li class="nav-item">
-                <a href="./pages/tasaciones.html"><i class='bx bxs-message-alt-detail'></i>Tasaciones</a>
+                <a class="nav-link" href="./pages/tasaciones.html"><i class='bx bxs-message-alt-detail'></i>Tasaciones</a>
             </li>
             <li class="nav-item">
-                <a href="pages/contacto.html"><i class='bx bxs-user-pin'></i>Contacto</a>
+                <a class="nav-link" href="pages/contacto.html"><i class='bx bxs-user-pin'></i>Contacto</a>
             </li>
         </ul>
+        <label for="check_menu"><i class="bx bx-menu"></i></label>
     </nav>    
     <header class="header-container">
             <video autoplay loop muted> <!-- video portada -->
@@ -44,7 +47,7 @@
         </section>
     </header>
         <section class="venta"> <!-- Contenedor de mejores propuestas -->
-                <h2>Destacados
+                <h2 class="text-center">Destacados
                     <span>Venta</span>
                 </h2>
             <section class="venta-container"> <!-- cartas -->
@@ -135,47 +138,90 @@
                     </div>
             </section>
         </section>        
-    <!--inicio de pie de pagina-->
     <div class="flecha">
         <a href="#top"><img src="./assets/img/flecha.png" alt="dirigete hacia arriba" class="top"></a>
     </div>
-    <footer class="footer">
-        <section class="redes"> <!-- Contenedor redes izquierda -->
-            <section class="footer-titles">
-                <h4>Nuestras redes</h4>
-            </section>
-            <a href="https://www.facebook.com/mondino.propiedades" target="_blank"><img src="./assets/img/facebook.png" alt="cuenta de facebook" class="icons"></a>
-                <p>Facebook/mondino.propiedades</p>
-            <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/instagram.png" alt="cuenta de instagram" class="icons"></a>
-                <p>Instagram/mondino.propiedades</p>
-            <a href="https://www.whatsapp.com/?l=es" target="_blank"><img src="assets/img/whatsapp.png" alt="numero de whatsapp" class="icons"></a>
-                <p>11857843xx</p>
-            <a href="https://www.google.com/intl/es-419/gmail/about/" target="_blank"><img src="./assets/img/correo-electronico.png" alt="cuenta de gmail" class="icons"></a>
-                <p>mondinopropiedades@gmail.com</p>
-            <img src="./assets/img/boton-de-simbolo-de-telefono.png" alt="numero de telefono" class="icons">
-            <p>2271-xxxxxx - 2271-xxxxxx</p>
-            <a href="https://www.twitter.com/" target="_blank"><img src="./assets/img/signo-de-twitter.png" alt="cuenta de twitter" class="icons"></a>
-                <p>Twitter/mondino.propiedades</p>    
-        </section>
-            <!--contenedor ubicacion derecha-->
-        <section class="ubicacion">
-            <section class="footer-titles">
-                <h4>¿Donde estamos?</h4>
-            </section>
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.5792125688477!2d-58.813202125001695!3d-35.44045240216737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd693ea384ad25%3A0xe105bf0b955619bd!2sMondino%20Propiedades!5e0!3m2!1ses!2sar!4v1696707626856!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   <!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+        <span>Buscanos en Nuestras Redes Sociales:</span>
+        </div>
+        <div>
+        <a href="https://www.facebook.com/mondino.propiedades" target="_blank" class="me-4 link-secondary">
+            <i class='bx bxl-facebook'></i>
+        </a>
+        <a href="https://www.twitter.com/" target="_blank" class="me-4 link-secondary">
+            <i class='bx bxl-twitter'></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank" class="me-4 link-secondary">
+            <i class='bx bxl-instagram'></i>
+        </a>
+        <a href="https://www.whatsapp.com/?l=es" target="_blank" class="me-4 link-secondary">
+            <i class='bx bxl-whatsapp'></i>
+        </a>
+        <a href="https://ar.linkedin.com/" target="_blank" class="me-4 link-secondary">
+            <i class='bx bxl-linkedin'></i>
+        </a>
+        <a href="https://github.com/Lvcas10/inmobiliaria-proyecto" target="_blank" class="me-4 link-secondary">
+            <i class="fab fa-github"></i>
+        </a>
+        </div>
+    </section>
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3 text-secondary"></i>Mondino Propiedades
+            </h6>
+            <p class="">
+                Somos una inmobiliaria de confianza dedicada a convertir sueños en realidades. Con un equipo de expertos en bienes raíces y un profundo conocimiento del mercado, nos especializamos en ayudar a nuestros clientes a encontrar el lugar perfecto para llamarla casa. ¡Bienvenido a tu futuro hogar!
+            </p>
             </div>
-        </section>
-        <section class="somos"> <!-- contenedor derechos de autor -->
-            <section class="footer-titles">
-                <h4>¿Quienes somos?</h4>
-            </section>
-            <div class="somos-container text-center">
-                <p>Somos una inmobiliaria de confianza dedicada a convertir sueños en realidades. Con un equipo de expertos en bienes raíces y un profundo conocimiento del mercado, nos especializamos en ayudar a nuestros clientes a encontrar el lugar perfecto para llamar hogar. Ya sea que estés buscando comprar, vender o alquilar una propiedad, estamos aquí para ofrecerte un servicio personalizado y eficiente que cumple con tus necesidades y expectativas. Nuestra pasión es conectar personas con propiedades, y estamos comprometidos a hacer de cada transacción una experiencia inolvidable. ¡Bienvenido a tu futuro hogar!</p>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                <p><i class="fas fa-home me-3 text-secondary"></i>San Miguel del Monte, Bs As.</p>
+                <p>
+                    <i class="fas fa-envelope me-3 text-secondary"></i>
+                    mondinopropiedades@gmail.com
+                </p>
+                <p><i class="fas fa-phone me-3 text-secondary"></i> + 011 234 567</p>
+                <p><i class="fas fa-print me-3 text-secondary"></i> + 011 234 567</p>
+                </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+                Navegacion
+            </h6>
+            <p>
+                <a href="index.html" class="text-reset">Inicio</a>
+            </p>
+            <p>
+                <a href="./pages/ventas.html" class="text-reset">Ventas</a>
+            </p>
+            <p>
+                <a href="./pages/alquileres.html" class="text-reset">Alquiler</a>
+            </p>
+            <p>
+                <a href="./pages/tasaciones.html" class="text-reset">Tasaciones</a>
+            </p>
+            <p>
+                <a href="./pages/contacto.html" class="text-reset">Contacto</a>
+            </p>
             </div>
-        </section>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase text-center fw-bold mb-4">¿Donde Estamos?</h6>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3250.5792125688477!2d-58.813202125001695!3d-35.44045240216737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd693ea384ad25%3A0xe105bf0b955619bd!2sMondino%20Propiedades!5e0!3m2!1ses!2sar!4v1696707626856!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        </div>
+    </section>
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" href="https://www.whatsapp.com/?l=es" target="_blank">Lucas Perez</a>
+    </div>
     </footer>
-    <!--fin pie de pagina-->
+    <!-- Footer -->
     <script src="js/bootstrap.js"></script>
 </body>
 </html>

@@ -49,68 +49,22 @@ h3 {
 }
 
 /* inicio footer */
-footer {
-    background-color: #48435C;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3)1fr;
+a .top { /*flecha hacia arriba*/
+    width: 30px;
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
 }
 
-.redes  {
-    position: absolut;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 20%;
-    height: 470px;
-    right: 50%;
-    padding: 1px 0 0 5px;
-    color: white;
+footer span {
+    color: rgb(0, 0, 0);
 }
 
-.ubicacion iframe {
-    height: 330px;
+footer div iframe {
     width: 300px;
-    box-shadow: 1px 1px 5px;
-}
-
-.somos {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    left: 30%;
     height: 300px;
-    width: 30%;
 }
 
-.somos-container {
-    font-size: 17px;
-    color: white;
-}
-
-.footer-titles h4 {
-    font-family: "LastEpisode";
-    font-size: 1.5rem;
-    color: white;
-    padding: 10px;
-}
-
-.ubicacion  {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1px;
-    left: 70%;
-    width: 25%;
-    height: 400px;
-    
-}
 /* fin footer */
 div.logo-container span { /* mondino propiedades */
     font-family: "Next Sunday";
@@ -120,7 +74,7 @@ img.icons { /*iconos footer*/
     width: 30px;
 }
 
-nav.navegacion { /*barra de navegacion*/
+nav.navegacion { /*barra de navegacion*/ 
     display: flex;
     width: 100%;
     height: 60px;
@@ -128,6 +82,7 @@ nav.navegacion { /*barra de navegacion*/
     position: sticky;
     top: 0;
     z-index: 10;
+    padding: 10px;
     align-items: center;
     justify-content: space-between;
 }
@@ -167,13 +122,19 @@ nav.navegacion { /*barra de navegacion*/
     font-family: "LastEpisode";
 }
 
-a .top { /*flecha hacia arriba*/
-    width: 30px;
-    position: fixed;
-    bottom: 10px;
-    right: 30px;
+ul li a.active {
+    color: #000000;
 }
 
+/* menu mobile */
+
+#check_menu,.navegacion label {
+    display: none;
+}
+
+.navegacion label {
+    font-size: 1.8rem;
+}
 
 .header-container {
     position: relative; /* contenedor de video */
@@ -283,6 +244,10 @@ a .top { /*flecha hacia arriba*/
     object-fit: cover;
 }
 
+.card img {
+    height: 200px;
+}
+
 .cards-title h3 {
     font-size: 1.5rem;
 }
@@ -307,6 +272,7 @@ a .top { /*flecha hacia arriba*/
 .cabecera h1 { /* modifica en alquileres */
     position: absolute;
     top: 300px;
+    color: #ffffff;
 } 
 
 .ventasht {
@@ -316,6 +282,7 @@ a .top { /*flecha hacia arriba*/
         width: 100%;
         padding: 20px;
         background-color: #ffffff;
+        box-shadow: 5px 5px  rgba(0, 0, 0, 0.5);
 }
 
 .form-ventasht {
@@ -368,6 +335,7 @@ a .top { /*flecha hacia arriba*/
     width: 100%;
     padding: 20px;
     background-color: #ffffff;
+    box-shadow: 5px 5px  rgba(0, 0, 0, 0.5);
 }
 
 
@@ -411,6 +379,7 @@ a .top { /*flecha hacia arriba*/
     width: 100%;
     padding: 10px;
     background-color: #c7d3dd;
+    box-shadow: 5px 5px  rgba(0, 0, 0, 0.5);
 }
 
 .container-sec {
@@ -566,3 +535,89 @@ form h5 span {
 }
 
 /* fin html contacto */
+
+/* media queries */
+
+@media (max-width:768px) {
+    .navegacion label{
+        display: block;
+    }
+    
+    .navegacion-nav {
+        display: none;
+    }
+    
+    .navegacion #check_menu:checked ~ .navegacion-nav{
+        background-color: #c7d3dd;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    
+    .container-portada {
+        left: 0;
+        width: 100%;
+    }
+
+    .venta-container {
+        position: relative;
+        left: 24%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .alquiler-container {
+        position: relative;
+        left: 24%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .ventasht {
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+    .form-ventasht {
+        position: relative;
+        width: 100%;
+    }
+
+    .sales-cards {
+        position: relative;
+        display: grid;
+        top: 10px;
+        width: 100%;
+        height: 100%;
+        left: 3%;
+        overflow-x: scroll;
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+}
+
+@media (max-width:475px) {
+    .venta-container {
+        left: 2%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .alquiler-container {
+        left: 2%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sales-cards {
+        position: relative;
+        display: grid;
+        top: 10px;
+        width: 100%;
+        height: 100%;
+        left: 9%;
+        overflow-x: scroll;
+        grid-template-columns: repeat(1, 1fr)
+    }
+}
