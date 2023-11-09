@@ -541,6 +541,7 @@ form h5 span {
 @media (max-width:768px) {
     .navegacion label{
         display: block;
+        color: #ffffff;
     }
     
     .navegacion-nav {
@@ -576,7 +577,7 @@ form h5 span {
         left: 24%;
         grid-template-columns: repeat(1, 1fr);
     }
-
+/* responsive ventas html */
     .ventasht {
         grid-template-columns: repeat(1, 1fr)
     }
@@ -596,6 +597,37 @@ form h5 span {
         overflow-x: scroll;
         grid-template-columns: repeat(2, 1fr)
     }
+/* responsive alquiler html */
+    .alquilerht {
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+    .form-alquilerht {
+        position: relative;
+        width: 100%;
+    }
+    
+    .alquiler-cards {
+        position: relative;
+        display: grid;
+        top: 10px;
+        width: 100%;
+        height: 100%;
+        left: 3%;
+        overflow-x: scroll;
+        grid-template-columns: repeat(2, 1fr)
+    }
+/* Responsive Tasaciones */
+    .container-tas {
+        grid-template-columns: repeat(1, 1fr)
+    }
+/* Responsive Contacto */
+    .contact-title {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        right: 13%;
+    }
 
 }
 
@@ -609,7 +641,7 @@ form h5 span {
         left: 2%;
         grid-template-columns: repeat(1, 1fr);
     }
-
+/* responsive ventas html */
     .sales-cards {
         position: relative;
         display: grid;
@@ -619,5 +651,65 @@ form h5 span {
         left: 9%;
         overflow-x: scroll;
         grid-template-columns: repeat(1, 1fr)
+    }
+/* responsive alquiler html */
+    .alquiler-cards {
+        position: relative;
+        display: grid;
+        top: 10px;
+        width: 100%;
+        height: 100%;
+        left: 9%;
+        overflow-x: scroll;
+        grid-template-columns: repeat(1, 1fr)
+    }
+/* Responsive Tasaciones */
+    .container-sec {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container-sec div h2 {
+        display: inline;
+        left: 30%;
+        width: 100%;
+        background-color: #c7d3dd;
+    }
+
+    .container-sec div img {
+        width: 320px;
+    }
+
+    .inftas {
+        width: 100%;
+        height: 100%;
+    }
+
+    .inftas h4 {
+        display: inline;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    /* Responsive Contacto */
+    .contact-title {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        right: 19%;
+        padding: 10px;
+    }
+
+    .contact-title h1 {
+        font-size: 1.2rem;
+    }
+    
+    .form-contact {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .contact {
+        width: 100%;
+        left: 0;
     }
 }
