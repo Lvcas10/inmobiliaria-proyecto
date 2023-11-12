@@ -487,7 +487,7 @@ form h5 span {
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
-    opacity: .8;
+    opacity: .5;
     transition: .5s ease;
 }
 
@@ -673,7 +673,6 @@ form h5 span {
         display: inline;
         left: 30%;
         width: 100%;
-        background-color: #c7d3dd;
     }
 
     .container-sec div img {
@@ -702,7 +701,7 @@ form h5 span {
     .contact-title h1 {
         font-size: 1.2rem;
     }
-    
+
     .form-contact {
         width: 100%;
         padding: 20px;
