@@ -132,6 +132,10 @@ body {
             flex-direction: column;
             justify-content: space-evenly;
 
+            h1 {
+                font-family: "LastEpisode";
+            }
+
             h2 {
                 font-family: "LastEpisode";
             }
@@ -492,6 +496,7 @@ body {
                 position: relative;
                 display: inline;
                 background-color: $color-primary;
+                font-family: "Next Sunday";
                 justify-content: center;
                 left: 24%;
                 width: $ancho;

@@ -126,6 +126,9 @@ footer iframe {
   flex-direction: column;
   justify-content: space-evenly;
 }
+.header-container .container-portada h1 {
+  font-family: "LastEpisode";
+}
 .header-container .container-portada h2 {
   font-family: "LastEpisode";
 }
@@ -443,6 +446,7 @@ main.ventasht .sales-cards .card img {
   position: relative;
   display: inline;
   background-color: #ffffff;
+  font-family: "Next Sunday";
   justify-content: center;
   left: 24%;
   width: 100%;
@@ -573,14 +577,21 @@ main.ventasht .sales-cards .card img {
     padding: 2% 0 0 0;
   }
   section.venta section.venta-container {
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 0;
-    left: 11%;
+    left: 0;
   }
   section.alquiler section.alquiler-container {
-    grid-template-columns: repeat(1, 1fr);
-    left: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 0;
+    padding-bottom: 20px;
+    left: 0;
   }
   /* fin index html */
   /* inicio ventas html */
@@ -590,12 +601,11 @@ main.ventasht .sales-cards .card img {
     justify-self: center;
   }
   main.ventasht article.sales-cards {
-    position: relative;
-    top: 10px;
-    padding: 0;
-    gap: 1rem 0 0 0;
-    left: 8%;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
   }
   /* fin ventas html */
   /* inicio alquiler html */
@@ -605,12 +615,11 @@ main.ventasht .sales-cards .card img {
     justify-self: center;
   }
   main.alquilerht article.alquiler-cards {
-    position: relative;
-    top: 10px;
-    padding: 0;
-    gap: 1rem 0 0 0;
-    left: 8%;
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0;
   }
   /* fin alquiler html */
   /* inicio tasaciones html */
@@ -623,7 +632,6 @@ main.ventasht .sales-cards .card img {
   }
   .container-sec div.header-tas img.tass {
     width: 320px;
-    background-color: aqua;
   }
   .inftas h4 {
     display: inline;
