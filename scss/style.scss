@@ -1,0 +1,526 @@
+@import "./partials/fonts";
+@import "./partials/variables";
+
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+#check_menu,.navegacion label {
+    display: none;
+}
+
+body {
+    background-color: $celeste;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+    footer iframe {
+        width: 300px;
+        height: 300px;
+    }
+
+    .flecha { /*flecha hacia arriba*/
+        width: 30px;
+        position: fixed;
+        bottom: 10px;
+        right: 30px;
+
+        img {
+            width: 30px;
+        }
+    }
+
+    /* INICIO INDEX */
+
+    .navegacion {
+    display: flex;
+    width: $ancho;
+    height: 60px;
+    background-color: $violeta;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+
+        .logo-container {
+        display: flex;
+        align-items: center;
+        margin-top: 2px;
+        width: 30%;
+
+            .logo {
+                width: 90px;
+            }
+            
+            span {
+                font-size: $tamanio*1.5;
+                font-weight: 100;
+                color: $color-primary;
+                font-family: "Next Sunday";
+            }
+        }
+    
+        .navegacion-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        list-style: none;
+        width: 40%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+            .nav-item {
+                padding: 10px;
+                
+                a {
+                    color: $color-primary;
+                    font-family: "LastEpisode";
+                }
+                
+                a.active {
+                    color: #000000;
+                }
+            }
+        }
+    
+        label {
+            font-size: 1.8rem;
+        }
+    }
+
+    .header-container {
+        position: relative; /* contenedor de video */
+        top: 0;
+        width: $ancho;
+        height: 80vh;
+
+        video {
+            position: absolute;
+            height: $alto;
+            width: $ancho;
+            object-fit: cover;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .capa {
+            position: absolute;
+            height: $alto;
+            width: $ancho;
+            background-color: rgba(0, 0, 0, 0.596); /* opacidad */
+            mix-blend-mode: overlay; /* revividor de colores */
+        }
+
+        .container-portada {
+            position: absolute;
+            background-color: rgba(7, 7, 7, 0.123);
+            top: 18%;
+            left: 5%;
+            padding: 20px; /* relleno interior */
+            width: 600px;
+            height: 300px;
+            color: $color-primary;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            h2 {
+                font-family: "LastEpisode";
+            }
+
+            h5 {
+                font-family: "LastEpisode";
+            }
+        }
+    }
+
+    .venta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 2% 0 0 6%;
+        width: $ancho;
+
+        h2 {
+            height: 70px;
+            text-align: center;
+            font-family: "LastEpisode";
+
+            span {
+                color: $violeta;
+            }
+        }
+
+        .venta-container {
+            width: $ancho;
+            height: $alto;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 1rem 4%
+        }
+    
+        .cards {
+            height: 400px;
+            width: 300px;
+            background-color: $color-primary;
+            border-radius: 5%;
+            box-shadow: 1px 1px 5px;  /* difuminado bordes */
+
+            img{
+                border-radius: 5px 5px 0 0;
+                width: $ancho;
+                height: 200px;
+                object-fit: cover;
+            }
+
+            .cards-title h3 {
+                font-size: 1.5rem;
+            }
+
+            .card-container {
+                width: $ancho;
+                padding: 10px;
+                font-size: $tamanio;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    .alquiler {
+        padding: 1.5rem 0 2% 6%;
+        width: $ancho;
+
+        h2 {
+            height: 70px;
+            text-align: center;
+            font-family: "LastEpisode";
+
+            span {
+                color: $violeta;
+            }
+        }
+
+        .alquiler-container {
+            width: $ancho;
+            height: $alto;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 1rem 4%
+        }
+
+        .cards {
+            height: 400px;
+            width: 300px;
+            background-color: $color-primary;
+            border-radius: 5%;
+            box-shadow: 1px 1px 5px;
+
+            img {
+                border-radius: 5px 5px 0 0;
+                width: $ancho;
+                height: 200px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    /* FIN INDEX */
+    /* INICIO VENTAS */
+    .cabecera { /* modifica en alquileres */
+        position: relative; 
+        width: $ancho;
+        height: 80vh;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    .cabecer { /* modifica en alquileres */
+        position: absolute;
+        top: 300px;
+        color: $color-primary;
+        font-family: "Next Sunday";
+    }
+
+    main.ventasht {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2,1fr) 2fr;
+        width: $ancho;
+        padding: 20px;
+        background-color: $color-primary;
+        box-shadow: 5px 5px  rgba(0, 0, 0, 0.5);
+
+        .form-ventasht {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $celeste;
+            width: 400px;
+            height: $alto;
+            padding: 25px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+            span {
+                color: $violeta;
+            }
+
+            .form-casilla { /* modifica alquiler */
+                padding: 8px;
+            }
+        }
+
+        .sales-cards {
+            position: relative;
+            background-color: $color-primary;
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            overflow-y: scroll;
+            overflow-y: hidden;
+            width: 900px;
+            height: 550px;
+            left: 15px;
+            gap: $tamanio;
+            padding-bottom: 10px;
+
+            .card {
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+                background-color: $celeste;
+
+                img {
+                    height: 250px;
+                }
+            }
+        }
+    }
+
+    /* FIN VENTAS */
+    /* INICIO ALQUILER */
+    
+    .alquilerht {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2,1fr) 2fr;
+        width: $ancho;
+        padding: 20px;
+        background-color: $color-primary;
+        box-shadow: 5px 5px  rgba(0, 0, 0, 0.5);
+
+        .form-alquilerht {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $celeste;
+            width: 400px;
+            height: $alto;
+            padding: 25px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+            h2 span {
+                color: $violeta;
+                font-size: 1.8rem;
+            }
+        }
+    }
+    .alquiler-cards {
+        position: relative;
+        background-color: $color-primary;
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        overflow-y: scroll;
+        overflow-y: hidden;
+        width: 900px;
+        height: 500px;
+        left: 15px;
+        gap: $tamanio;
+        padding-bottom: 10px;
+
+        .card {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            background-color: $celeste;
+
+            img {
+                height: 200px;
+            }
+        }
+    }
+
+    /* FIN ALQUILER */
+    /* INICIO TASACIONES */
+
+    .container-tas {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: $ancho;
+        padding: 10px;
+        background-color: $celeste;
+        box-shadow: 5px 5px  rgba(0, 0, 0, 0.5);
+
+        
+        .container-sec {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            width: $ancho;
+            height: $alto;
+            background-color: $color-primary;
+
+            .header-tas {
+                width: $ancho;
+                height: $alto;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+                padding: 10px;
+
+                h2 {
+                    
+                    font-size: 2.3rem;
+                    width: $ancho;
+                    color: #050505;
+                }
+                
+                img {
+                    position: relative;
+                    left: 4.7%;
+                    width: 600px;
+                    height: 400px;
+                }
+
+                h3 {
+                    position: relative;
+                    font-family: "Next Sunday";
+                    font-size: $tamanio*2;
+                    width: 70%;
+                    left: 16%;
+                    top: -90px;
+                    color: $violeta;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.753);
+                }
+
+                .inftas {
+                    position: relative;
+                    width: $ancho;
+                    height: $alto;
+
+                    h4 {
+                        font-family: "Next Sunday";
+                        font-size: 1.5rem;
+                        width: 60%;
+                        left: 17%;
+                        top: -90px;
+                        color: #000000;
+                        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.753);
+                    }
+                }
+            }
+        }
+
+        .form-tas {
+            position: relative;
+            width: $ancho;
+            height: $alto;
+
+            .form-containertas {
+                padding: 30px;
+
+                form {
+                    padding: 15px;
+
+                    h5 {
+                        position: relative;
+                        top: -25px;
+                        font-size: $tamanio*2;
+                        color: #000000;
+
+                        span {
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* FIN TASACIONES */
+    /* INICIO CONTACTO */
+
+    .cabecera-contact {
+        position: relative; 
+        width: $ancho;
+        height: 90vh;
+
+        .pics {
+            position: relative;
+            display: flex;
+            width: $ancho;
+            height: $alto;
+            padding: 0 0 10px 0;
+            background-color: $color-primary;
+            
+            img {
+                width: 0px;
+                flex-grow: 1;
+                object-fit: cover;
+                opacity: .5;
+                transition: .5s ease;
+
+                &:hover {
+                    cursor: crosshair;
+                    width: 300px;
+                    opacity: 1;
+                    filter: contrast(120%);
+                }
+            }
+        }
+
+        .contact-title {
+            padding: 15px;
+
+            h1 {
+                position: relative;
+                display: inline;
+                background-color: $color-primary;
+                justify-content: center;
+                left: 24%;
+                width: $ancho;
+                padding: 10px;
+                box-shadow: 15px 5px 10px rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+
+    .form-contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: $color-primary;
+        padding: 50px;
+        
+        .contact {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            background-color: $celeste;
+            width: 60%;
+            left: 20%;
+            bottom: -40px;
+            padding: 30px;
+            gap: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 5px 5px  rgba(0, 0, 0, 0.5);
+        }
+    }
+
+@import "../scss/partials/queries";
