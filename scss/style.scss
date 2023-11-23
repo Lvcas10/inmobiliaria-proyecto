@@ -1,6 +1,39 @@
 @import "./partials/fonts";
 @import "./partials/variables";
 
+@mixin encabezados () {
+
+    h1 {
+        font-family: "LastEpisode";
+    }
+
+    h2 {
+        font-family: "LastEpisode";
+    }
+
+    h5 {
+        font-family: "LastEpisode";
+    }
+}
+
+@include encabezados();
+
+@mixin tamanio($alto, $ancho) {
+
+    height: $alto;
+    width: $ancho;
+}
+
+@keyframes rotar {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
 *{
     margin: 0;
     padding: 0; 
@@ -20,6 +53,8 @@ a{
 body {
     background-color: $celeste;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: $ancho;
+    height: $alto;
 }
 
     footer iframe {
@@ -60,6 +95,7 @@ body {
 
             .logo {
                 width: 90px;
+                animation: rotar 5s ease-in-out infinite;
             }
             
             span {
@@ -84,6 +120,11 @@ body {
                 a {
                     color: $color-primary;
                     font-family: "LastEpisode";
+
+                    &:hover {
+                        color: #000000;
+                        transition: 0.5s ease;
+                    }
                 }
                 
                 a.active {
@@ -125,24 +166,13 @@ body {
             top: 18%;
             left: 5%;
             padding: 20px; /* relleno interior */
-            width: 600px;
-            height: 300px;
+            /* width: 600px;
+            height: 300px; */
+            @include tamanio(300px,600px); /* primero alto y despues ancho */
             color: $color-primary;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
-
-            h1 {
-                font-family: "LastEpisode";
-            }
-
-            h2 {
-                font-family: "LastEpisode";
-            }
-
-            h5 {
-                font-family: "LastEpisode";
-            }
         }
     }
 
@@ -174,19 +204,26 @@ body {
         }
     
         .cards {
-            height: 400px;
-            width: 300px;
+            /* height: 400px;
+            width: 300px; */
+            @include tamanio(400px,300px);
             background-color: $color-primary;
             border-radius: 5%;
             box-shadow: 1px 1px 5px;  /* difuminado bordes */
 
+            &:hover {
+                transform: scale(1.03);
+                transition: .2s;
+                cursor: pointer;
+            }
+            
             img{
                 border-radius: 5px 5px 0 0;
                 width: $ancho;
                 height: 200px;
                 object-fit: cover;
             }
-
+            
             .cards-title h3 {
                 font-size: 1.5rem;
             }
@@ -226,11 +263,18 @@ body {
         }
 
         .cards {
-            height: 400px;
-            width: 300px;
+            /* height: 400px;
+            width: 300px; */
+            @include tamanio(400px,300px);
             background-color: $color-primary;
             border-radius: 5%;
             box-shadow: 1px 1px 5px;
+
+            &:hover {
+                transform: scale(1.03);
+                transition: .2s;
+                cursor: pointer;
+            }
 
             img {
                 border-radius: 5px 5px 0 0;
@@ -247,7 +291,29 @@ body {
         position: relative; 
         width: $ancho;
         height: 80vh;
+        background-image: url(../assets/img/lagunaportada.jpeg);
+        background-position: center;
+        background-size: cover;
+        animation: galeria 30s infinite;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    @keyframes galeria {
+        0%, 100% {
+            background-image: url(../assets/img/lagunaportada.jpeg);
+        }
+
+        25% {
+            background-image: url(../assets/img/lagunaportada2.jpg);
+        }
+
+        50% {
+            background-image: url(../assets/img/lagunaportada3.jpg);
+        }
+
+        75% {
+            background-image: url(../assets/img/lagunaportada4.jpeg);
+        }
     }
     
     .cabecer { /* modifica en alquileres */
@@ -259,8 +325,7 @@ body {
 
     main.ventasht {
         position: relative;
-        display: grid;
-        grid-template-columns: repeat(2,1fr) 2fr;
+        display: flex;
         width: $ancho;
         padding: 20px;
         background-color: $color-primary;
@@ -272,7 +337,7 @@ body {
             flex-direction: column;
             justify-content: center;
             background-color: $celeste;
-            width: 400px;
+            width: 30%;
             height: $alto;
             padding: 25px;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -293,7 +358,7 @@ body {
             grid-template-columns: repeat(7,1fr);
             overflow-y: scroll;
             overflow-y: hidden;
-            width: 900px;
+            width: 70%;
             height: 550px;
             left: 15px;
             gap: $tamanio;
@@ -302,6 +367,12 @@ body {
             .card {
                 box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
                 background-color: $celeste;
+
+                &:hover {
+                    transform: scale(.98);
+                    transition: .4s;
+                    cursor: pointer;
+                }
 
                 img {
                     height: 250px;
@@ -315,8 +386,7 @@ body {
     
     .alquilerht {
         position: relative;
-        display: grid;
-        grid-template-columns: repeat(2,1fr) 2fr;
+        display: flex;
         width: $ancho;
         padding: 20px;
         background-color: $color-primary;
@@ -328,7 +398,7 @@ body {
             flex-direction: column;
             justify-content: center;
             background-color: $celeste;
-            width: 400px;
+            width: 30%;
             height: $alto;
             padding: 25px;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -346,7 +416,7 @@ body {
         grid-template-columns: repeat(7,1fr);
         overflow-y: scroll;
         overflow-y: hidden;
-        width: 900px;
+        width: 70%;
         height: 500px;
         left: 15px;
         gap: $tamanio;
@@ -355,6 +425,12 @@ body {
         .card {
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
             background-color: $celeste;
+
+            &:hover {
+                transform: scale(.98);
+                transition: .4s;
+                cursor: pointer;
+            }
 
             img {
                 height: 200px;
@@ -374,7 +450,6 @@ body {
         background-color: $celeste;
         box-shadow: 5px 5px  rgba(0, 0, 0, 0.5);
 
-        
         .container-sec {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             display: flex;
@@ -395,12 +470,15 @@ body {
                     width: $ancho;
                     color: #050505;
                 }
-                
+
                 img {
                     position: relative;
-                    left: 4.7%;
-                    width: 600px;
-                    height: 400px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    /* width: 600px;
+                    height: 400px; */
+                    @include tamanio(400px,600px);
                 }
 
                 h3 {

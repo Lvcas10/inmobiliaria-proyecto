@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- libreria externa -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS -->
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css"> <!-- vinculo css -->
     <title>Mondino Propiedades</title>
@@ -51,7 +52,7 @@
                     <span>Venta</span>
                 </h2>
             <section class="venta-container"> <!-- cartas -->
-                <div class="cards">
+                <div class="cards" data-aos="fade-right">
                         <img
                         src="./assets/img/casa1.jpeg" 
                         alt="casa destacada 1" 
@@ -64,7 +65,7 @@
                         <p>Casa quinta en venta: Amplia propiedad de campo con hermosos jardines, piscina y zona de entretenimiento al aire libre. Perfecta para disfrutar de la tranquilidad y el verano.</p>
                     </div>
                 </div>
-                <div class="cards">
+                <div class="cards" data-aos="fade-up">
                     <img 
                         src="./assets/img/casa2.jpg" 
                         alt="casa destacada 2" 
@@ -77,7 +78,7 @@
                     </div>
                 </div>
                 </div>
-                <div class="cards">
+                <div class="cards" data-aos="fade-left">
                     <img 
                         src="./assets/img/casa3.jpg" 
                         alt="casa destacada 3" 
@@ -97,7 +98,7 @@
                 <span>Alquiler</span>
             </h2>
             <section class="alquiler-container"> <!-- cartas -->
-                    <div class="cards">
+                    <div class="cards" data-aos="fade-up-right">
                         <img 
                         src="./assets/img/casa4.jpg" 
                         alt="casa destacada 4" 
@@ -110,7 +111,7 @@
                         <p>Casa en barrio privado para alquilar: Exclusiva residencia con seguridad 24/7 y amenidades de lujo, ofreciendo privacidad y estilo de vida premium en un entorno tranquilo y seguro.</p>
                     </div>
                     </div>
-                    <div class="cards">
+                    <div class="cards" data-aos="zoom-out">
                         <img
                         src="./assets/img/casa5.jpeg" 
                         alt="casa destacada 5" 
@@ -123,7 +124,7 @@
                         <p>Hermosa casa con piscina disponible para alquiler. Esta espaciosa propiedad de tres habitaciones cuenta con una piscina privada, un jardín exuberante y comodidades modernas para una escapada inolvidable.</p>
                     </div>
                     </div>
-                    <div class="cards">
+                    <div class="cards" data-aos="fade-up-left">
                         <img 
                         src="./assets/img/casa6.jpg" 
                         alt="casa destacada 6" 
@@ -223,5 +224,9 @@
     </footer>
     <!-- Footer -->
     <script src="js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
