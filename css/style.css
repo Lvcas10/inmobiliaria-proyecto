@@ -191,7 +191,7 @@ footer iframe {
   box-shadow: 1px 1px 5px; /* difuminado bordes */
 }
 .venta .cards:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
   transition: 0.2s;
   cursor: pointer;
 }
@@ -243,7 +243,7 @@ footer iframe {
   box-shadow: 1px 1px 5px;
 }
 .alquiler .cards:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
   transition: 0.2s;
   cursor: pointer;
 }
@@ -659,6 +659,7 @@ main.ventasht .sales-cards .card img {
     flex-direction: column;
     padding: 0;
     left: 0;
+    right: 0;
   }
   section.alquiler section.alquiler-container {
     display: flex;
@@ -668,6 +669,7 @@ main.ventasht .sales-cards .card img {
     padding: 0;
     padding-bottom: 20px;
     left: 0;
+    right: 0;
   }
   /* fin index html */
   /* inicio ventas html */
