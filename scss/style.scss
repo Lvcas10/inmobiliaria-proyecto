@@ -122,13 +122,13 @@ body {
                     font-family: "LastEpisode";
 
                     &:hover {
-                        color: #000000;
-                        transition: 0.5s ease;
+                        border-bottom: 1px solid #ffffff;
+                        transition: 0.1s ease;
                     }
                 }
                 
                 a.active {
-                    color: #000000;
+                    border-bottom: 1px solid #ffffff;
                 }
             }
         }
