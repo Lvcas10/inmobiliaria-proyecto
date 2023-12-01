@@ -272,13 +272,13 @@ footer iframe {
     background-image: url(../assets/img/lagunaportada.jpeg);
   }
   25% {
-    background-image: url(../assets/img/lagunaportada2.jpg);
-  }
-  50% {
     background-image: url(../assets/img/lagunaportada3.jpg);
   }
-  75% {
+  50% {
     background-image: url(../assets/img/lagunaportada4.jpeg);
+  }
+  75% {
+    background-image: url(../assets/img/lagunaportada2.jpg);
   }
 }
 .cabecer { /* modifica en alquileres */
