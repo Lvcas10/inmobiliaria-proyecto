@@ -191,7 +191,7 @@ footer iframe {
   box-shadow: 1px 1px 5px; /* difuminado bordes */
 }
 .venta .cards:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
   transition: 0.2s;
   cursor: pointer;
 }
@@ -243,7 +243,7 @@ footer iframe {
   box-shadow: 1px 1px 5px;
 }
 .alquiler .cards:hover {
-  transform: scale(1.01);
+  transform: scale(1.02);
   transition: 0.2s;
   cursor: pointer;
 }
