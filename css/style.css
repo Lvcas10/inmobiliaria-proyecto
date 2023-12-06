@@ -580,7 +580,7 @@ main.ventasht .sales-cards .card img {
     display: none;
   }
   .navegacion #check_menu:checked ~ .navegacion-nav {
-    background-color: #c7d3dd;
+    background-color: #48435C;
     width: 100%;
     height: 100vh;
     position: absolute;
